@@ -7,7 +7,7 @@
             <field name="model">purchase.config.settings</field>
             <field name="inherit_id" ref="purchase.view_purchase_configuration"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='group_costing_method']" position="after">
+                <xpath expr="//field[@name='group_costing_method']" position="replace">
                     <field name="default_cost_method" class="oe_inline"/>
                 </xpath>
             </field>
